@@ -75,7 +75,7 @@ document.getElementById("btnRefresh").addEventListener("click", refresh);
 document.getElementById("btnCreatePortfolio").addEventListener("click", async () => {
   const name = prompt("Portfolio name (e.g., Talal PSX)");
   if (!name) return;
-  const { error } = await supabase.from("portfolios").insert({ name });
+  const { error } = const { data: { session } } = await supabase.auth.getSession(); if (!session) return msg("Not logged in. Please login again.", true);  const { error } = await supabase   .from("portfolios")   .insert({ name, user_id: session.user.id });
   if (error) return msg(error.message, true);
   await loadPortfolios(portfolioSelect);
   msg("Portfolio created.");
