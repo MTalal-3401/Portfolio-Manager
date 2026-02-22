@@ -1,7 +1,7 @@
-import { requireAuth } from "auth.js";
-import { uploadToBucket, callFn } from "api.js";
-import { sha256Hex } from "utils.js";
-import { wireNav } from "_nav.js";
+import { requireAuth } from "../auth.js";
+import { uploadToBucket, callFn } from "../api.js";
+import { sha256Hex } from "../utils.js";
+import { wireNav } from "../_nav.js";
 
 await wireNav();
 await requireAuth();
