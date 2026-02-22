@@ -1,5 +1,5 @@
-import { supabase } from "supabaseClient.js";
-import { signOut } from "auth.js";
+import { supabase } from "../supabaseClient.js";
+import { signOut } from "../auth.js";
 
 export async function wireNav(){
   const login = document.getElementById("navLogin");
