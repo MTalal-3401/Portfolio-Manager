@@ -1,5 +1,5 @@
-import { pdfjsLib } from "./pdfjs-loader.js";
-import { parseNumber, parseDateDMY, parseDateSlash } from "../utils.js";
+import { pdfjsLib } from "pdfjs-loader.js";
+import { parseNumber, parseDateDMY, parseDateSlash } from "utils.js";
 
 /**
  * Parse CDC Dividend / Zakat & Tax Deduction Summary PDF.
