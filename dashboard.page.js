@@ -1,9 +1,9 @@
-import { requireAuth } from "../auth.js";
-import { supabase } from "../supabaseClient.js";
-import { callFn } from "../api.js";
-import { fmtMoney, setText, setHTML, show, hide } from "../utils.js";
-import { loadPortfolios } from "./portfolioSelect.js";
-import { wireNav } from "./_nav.js";
+import { requireAuth } from "auth.js";
+import { supabase } from "supabaseClient.js";
+import { callFn } from "api.js";
+import { fmtMoney, setText, setHTML, show, hide } from "utils.js";
+import { loadPortfolios } from "portfolioSelect.js";
+import { wireNav } from "_nav.js";
 
 await wireNav();
 await requireAuth();
