@@ -1,4 +1,4 @@
-import { supabase } from "supabaseClient.js";
+import { supabase } from "../supabaseClient.js";
 
 export async function requireAuth(redirectTo="../pages/login.html"){
   const { data: { session } } = await supabase.auth.getSession();
