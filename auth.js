@@ -1,4 +1,4 @@
-import { supabase } from "./supabaseClient.js";
+import { supabase } from "supabaseClient.js";
 
 export async function requireAuth(redirectTo="../pages/login.html"){
   const { data: { session } } = await supabase.auth.getSession();
@@ -12,5 +12,5 @@ export async function requireAuth(redirectTo="../pages/login.html"){
 
 export async function signOut(){
   await supabase.auth.signOut();
-  location.href = "../pages/login.html";
+  location.href = "login.html";
 }
