@@ -1,6 +1,9 @@
 import { supabase } from "../supabaseClient.js";
 import { signOut } from "../auth.js";
 
+const { data: { session } } = await supabase.auth.getSession();
+console.log("SESSION ON THIS PAGE:", session);
+
 export async function wireNav(){
   const login = document.getElementById("navLogin");
   const logout = document.getElementById("navLogout");
