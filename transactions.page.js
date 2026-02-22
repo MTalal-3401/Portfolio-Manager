@@ -1,9 +1,9 @@
-import { requireAuth } from "auth.js";
-import { uploadToBucket, callFn } from "api.js";
-import { sha256Hex, setHTML, show, hide } from "utils.js";
-import { loadPortfolios } from "portfolioSelect.js";
-import { wireNav } from "_nav.js";
-import { parseTransactionPDF } from "parseTransactionPDF.js";
+import { requireAuth } from "../auth.js";
+import { uploadToBucket, callFn } from "../api.js";
+import { sha256Hex, setHTML, show, hide } from "../utils.js";
+import { loadPortfolios } from "../portfolioSelect.js";
+import { wireNav } from "../_nav.js";
+import { parseTransactionPDF } from "../parseTransactionPDF.js";
 
 await wireNav();
 await requireAuth();
