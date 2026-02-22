@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Market Data</title>
+  <link rel="stylesheet" href="../styles/app.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PSX Portfolio Tracker</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./transactions.html">Transactions</a>
+      <a href="./dividends.html">Dividends</a>
+      <a href="./market-data.html">Market Data</a>
+      <a href="./financials.html">Financials</a>
+      <a href="./login.html" id="navLogin">Login</a>
+      <a href="#" id="navLogout" class="hidden">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+  <h1>Market Data</h1>
+  <p>Upload EOD prices CSV into the shared database. Restrict this page via RLS roles.</p>
+
+  <div class="grid-2" style="margin-top:12px">
+    <div class="stack">
+      <label>Upload EOD Prices CSV</label>
+      <input class="input" type="file" id="csvFile" accept=".csv,text/csv"/>
+      <small class="muted">Format: SYMBOL,DATE,OPEN,HIGH,LOW,CLOSE,VOLUME (DATE = YYYY-MM-DD recommended)</small>
+    </div>
+    <div class="stack">
+      <label>Notes (optional)</label>
+      <input class="input" id="notes" placeholder="e.g., PSX EOD Feb 2026"/>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:12px">
+    <button class="button" id="btnUpload" disabled>Upload & Import</button>
+  </div>
+
+  <div id="msg" class="notice hidden" style="margin-top:12px"></div>
+</section>
+
+  </main>
+
+  <footer class="footer"><small>No Python • Supabase • HTML/CSS/JS</small></footer>
+  <script type="module" src="../js/pages/market-data.page.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>PSX Portfolio Tracker</title>
+  <link rel="stylesheet" href="./styles/app.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PSX Portfolio Tracker</div>
+    <nav class="nav">
+      <a href="./pages/login.html">Login</a>
+      <a href="./pages/dashboard.html">Dashboard</a>
+      <a href="./pages/transactions.html">Transactions</a>
+      <a href="./pages/dividends.html">Dividends</a>
+      <a href="./pages/market-data.html">Market Data</a>
+      <a href="./pages/financials.html">Financials</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>Welcome</h1>
+      <p>This is a no‑Python starter: HTML/CSS/JS + Supabase + Edge Functions.</p>
+      <ol>
+        <li>Configure Supabase in <code>frontend/js/config.js</code></li>
+        <li>Create a portfolio</li>
+        <li>Import broker PDF transactions and CDC dividend report</li>
+        <li>Upload EOD prices CSV</li>
+      </ol>
+      <div class="row">
+        <a class="button" href="./pages/login.html">Go to Login</a>
+        <a class="button secondary" href="./pages/dashboard.html">Open Dashboard</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Supported imports</h2>
+      <ul>
+        <li>Broker Transaction Statement (SR2758-like PDF)</li>
+        <li>CDC Dividend Summary Report (PDF)</li>
+        <li>EOD Prices CSV: SYMBOL,DATE,OPEN,HIGH,LOW,CLOSE,VOLUME</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Built with Supabase. No Python.</small>
+  </footer>
+</body>
+</html>

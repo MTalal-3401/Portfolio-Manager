@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="../styles/app.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">PSX Portfolio Tracker</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="./dashboard.html">Dashboard</a>
+      <a href="./transactions.html">Transactions</a>
+      <a href="./dividends.html">Dividends</a>
+      <a href="./market-data.html">Market Data</a>
+      <a href="./financials.html">Financials</a>
+      <a href="./login.html" id="navLogin">Login</a>
+      <a href="#" id="navLogout" class="hidden">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+  <h1>Login</h1>
+  <p>Sign in to access your portfolios.</p>
+
+  <div class="grid-2">
+    <div class="stack">
+      <label>Email</label>
+      <input class="input" id="email" type="email" placeholder="you@example.com"/>
+    </div>
+    <div class="stack">
+      <label>Password</label>
+      <input class="input" id="password" type="password" placeholder="••••••••"/>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:12px">
+    <button class="button" id="btnLogin">Login</button>
+    <button class="button secondary" id="btnSignup">Create account</button>
+  </div>
+
+  <div id="msg" class="notice hidden" style="margin-top:12px"></div>
+</section>
+
+<section class="card">
+  <h2>Create portfolio (after login)</h2>
+  <p>Once logged in, create a portfolio from the Dashboard page.</p>
+</section>
+
+  </main>
+
+  <footer class="footer"><small>No Python • Supabase • HTML/CSS/JS</small></footer>
+  <script type="module" src="../js/pages/login.page.js"></script>
+</body>
+</html>
