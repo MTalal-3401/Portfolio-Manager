@@ -1,6 +1,6 @@
-import { supabase } from "../supabaseClient.js";
-import { qs, setHTML, show, hide } from "../utils.js";
-import { wireNav } from "./_nav.js";
+import { supabase } from "supabaseClient.js";
+import { qs, setHTML, show, hide } from "utils.js";
+import { wireNav } from "_nav.js";
 
 await wireNav();
 
