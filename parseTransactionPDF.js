@@ -1,5 +1,5 @@
-import { pdfjsLib } from "pdfjs-loader.js";
-import { parseNumber, parseDateDMY } from "utils.js";
+import { pdfjsLib } from "../pdfjs-loader.js";
+import { parseNumber, parseDateDMY } from "../utils.js";
 
 /**
  * Parse broker Transaction Statement (SR2758-like).
