@@ -1,8 +1,8 @@
-import { requireAuth } from "auth.js";
-import { supabase } from "supabaseClient.js";
-import { fmtMoney } from "utils.js";
-import { loadPortfolios } from "portfolioSelect.js";
-import { wireNav } from "_nav.js";
+import { requireAuth } from "../auth.js";
+import { supabase } from "../supabaseClient.js";
+import { fmtMoney } from "../utils.js";
+import { loadPortfolios } from "../portfolioSelect.js";
+import { wireNav } from "../_nav.js";
 
 await wireNav();
 await requireAuth();
